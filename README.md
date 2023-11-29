@@ -27,7 +27,7 @@ yarn storybook
 
 ##### 4. Build package in local.
 
-- Build package.
+- Build package in local then install to another project locally.
 
 ```bash
 # build bundle
@@ -42,6 +42,8 @@ npm install ./<your SDK folder path>/my-sdk-0.0.x.tgz
 ```
 
 ##### 4. Build & publish SDK via npm.
+
+- After test & make sure the package work well. Then we publish it to npm to install online.
 
 ```bash
 # make sure your code up to date
@@ -65,6 +67,19 @@ $ npm publish --tag beta
 ```
 
 ##### 4. Testing
+
+- Test render by snapshot testing.
+  Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly.
+
+```bash
+
+# Run test
+$ npm run test
+
+# If the UI component was updated, we should update the snapshot test
+$ npm run updateSnapshot
+
+```
 
 # Folder Structure
 

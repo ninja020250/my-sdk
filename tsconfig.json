@@ -20,6 +20,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "declaration": true,
+    "esModuleInterop": true,
+
     "paths": {
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
