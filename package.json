@@ -1,0 +1,82 @@
+{
+  "name": "my-sdk",
+  "private": false,
+  "version": "0.0.14",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "./types/components.d.ts",
+    "./types/hooks.d.ts",
+    "./types/styles.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js"
+    },
+    "./components/Atom": {
+      "import": "./dist/components/Atom/index.js"
+    },
+    "./components/Molecule": {
+      "import": "./dist/components/Molecule/index.js"
+    },
+    "./components/Organism": {
+      "import": "./dist/components/Organism/index.js"
+    },
+    "./hooks": {
+      "import": "./dist/hooks/index.js"
+    },
+    "./styles": {
+      "import": "./dist/styles/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "sb dev -p 6006",
+    "build-storybook": "sb build",
+    "svgr": "svgr --typescript --ext tsx --out-dir src/components/icons src/assets/icons"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.5",
+    "i18next": "^23.7.6",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
+    "react-icons": "^4.12.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/storybook-addon": "^5.1.0",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/cli": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@svgr/cli": "^8.1.0",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "storybook-addon-designs": "^6.3.1",
+    "storybook-addon-react-router-v6": "^2.0.10",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3"
+  }
+}
