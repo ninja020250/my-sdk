@@ -1,7 +1,7 @@
 {
   "name": "@nhatcuonghuynh/my-sdk",
   "private": false,
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -40,6 +40,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "co:login": "aws codeartifact login --tool npm --repository SDK --domain sdk --domain-owner 238605814983 --region ap-southeast-2",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "sb dev -p 6006",
