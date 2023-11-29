@@ -7,9 +7,6 @@ export type { BrandLogoProps } from "./BrandLogo";
 export { default as Carousel } from "./Carousel";
 export type { CarouselProps } from "./Carousel";
 
-export { default as Navigation } from "./Navigation";
-export type { NavigationProps } from "./Navigation";
-
 export { default as NavigationMenuButton } from "./NavigationMenuButton";
 export type { NavigationMenuButtonProps } from "./NavigationMenuButton";
 

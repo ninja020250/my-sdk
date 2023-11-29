@@ -3,7 +3,7 @@ import React from "react";
 
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Navigation from "../../components/Molecule/Navigation";
+import Navigation from "../../components/Organism/Navigation";
 
 const meta: Meta<typeof Navigation> = {
   component: Navigation,

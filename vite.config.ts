@@ -44,6 +44,7 @@ export default defineConfig({
       "@components": resolve(__dirname, "src/components"),
       "@hooks": resolve(__dirname, "src/hooks"),
       "@styles": resolve(__dirname, "src/styles"),
+      "@utility": resolve(__dirname, "src/utility"),
     },
   },
 });

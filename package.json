@@ -32,6 +32,9 @@
     },
     "./styles": {
       "import": "./dist/styles/index.js"
+    },
+    "./utility": {
+      "import": "./dist/utility/index.js"
     }
   },
   "scripts": {
