@@ -1,5 +1,5 @@
 {
-  "name": "my-sdk",
+  "name": "@nhatcuonghuynh/my-sdk",
   "private": false,
   "version": "0.0.14",
   "main": "dist/index.js",
